@@ -1,0 +1,145 @@
+#meme-section {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	display: flex;
+	justify-content: center;
+	margin-top: 2px;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+#top {
+	position: absolute;
+	padding: 0px 5px;
+	top: 2px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%);
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-weight: 700;
+	font-size: 25px;
+}
+#bottom-text {
+	margin-top: 1px;
+}
+
+#image {
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	height: auto;
+}
+#meme-image {
+	margin-bottom: 1px;
+	margin-right: 10px;
+}
+#meme-button {
+	margin-right: 1px;
+}
+
+#bottom {
+	position: absolute;
+	padding: 0px 5px;
+	bottom: 2px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%);
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+#meme-align {
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	display: inline-block;
+}
+
+p {
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	color: #ff6666;
+}
+
+/* Ignore this. Found it in Googling just for fun to make my page look a little better*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+	0% {
+		transform: translate3d(0, 100%, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(0, 50%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes showBottomText {
+	0% {
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.animated-title {
+	color: #222;
+	font-family: Roboto, Arial, sans-serif;
+	height: 7rem;
+	left: 50%;
+	position: relative;
+	margin-top: 5rem;
+	transform: translate(-50%, -50%);
+	width: 13vmin;
+}
+.animated-title > div {
+	height: 50%;
+	overflow: hidden;
+	position: absolute;
+	width: 85px;
+}
+.animated-title > div div {
+	font-size: 3vmin;
+	padding: 1.4vmin 0;
+	position: absolute;
+}
+.animated-title > div div span {
+	display: block;
+}
+.animated-title > div.text-top {
+	border-bottom: 1vmin solid #000;
+	top: 0;
+}
+.animated-title > div.text-top div {
+	animation: showTopText 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	bottom: 0;
+	transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+	color: #767676;
+}
+.animated-title > div.text-bottom {
+	bottom: 0;
+}
+.animated-title > div.text-bottom div {
+	animation: showBottomText 0.5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
+	top: 0;
+	transform: translate(0, -100%);
+	font-size: 22px;
+}

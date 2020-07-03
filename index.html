@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <!-- Ignore this. This is just for fun (majority in CSS) -->
+    <div class="animated-title">
+        <div class="text-top">
+          <div>
+            <span>Make</span>
+            <span>some</span>
+          </div>
+        </div>
+        <div class="text-bottom">
+          <div>MEMES!</div>
+        </div>
+      </div>
+    <!-- Stops Here-->
+    <form id="form-container">
+        <section class ="center">
+    <div>
+        <label for="meme-image">Meme Image: </label>
+            <input id="meme-image" type="url" placeholder="Input your meme image URL here" size="50" >  
+        <br>
+        <label for="top-text">Top Text:</label>
+            <input id="top-text" type ="text" placeholder="Meme top text" size ="50">     
+        <br>
+        <label for="bottom-text">Bottom Text:</label>
+            <input id="bottom-text" type="text" placeholder="Meme bottom text" size ="50">  
+    </div>
+    <div>
+        <div>
+        <button id="meme-button">Generate Meme</button>
+        </div>
+    </div>
+        </section>
+        
+    </form>
+<p id="para">Double Click on your meme to remove it!</p>
+    <section id="meme-section">
+
+    </section>
+</body>
+<script src="index.js"></script>
+</html>
